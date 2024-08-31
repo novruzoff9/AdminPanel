@@ -84,6 +84,7 @@
       width: 320px;
       display: none;
       user-select: none;
+      z-index: 5;
       .header {
         display: flex;
         flex-direction: row;
@@ -172,6 +173,7 @@
       width: 320px;
       display: none;
       user-select: none;
+      z-index: 5;
       .header {
         display: flex;
         flex-direction: row;
@@ -216,10 +218,10 @@
           &.logout{
             i{
               background-color: #fbdbe1;
-              color: #ff331f;
+              color: $red;
             }
             p{
-              color: #ff331f;
+              color: $red;
             }
           }
           &:hover{

@@ -21,7 +21,7 @@ $(document).click(function (event) {
 
 $('#notficiationsbtn').click(function (event) {
   event.stopPropagation();
-  $('#profile-menu').hide(); // Profil menüsünü kapat
+  $('#profile-menu').hide();
   $('#notficiations-menu').toggle();
 });
 
@@ -32,10 +32,6 @@ $('#user-data').click(function (event) {
 });
 
 $(".open-sub-menu").click(function(){
-  console.log("dad");
-  console.log($(this));
-  
-  $(this).children("i").toggleClass("fa-chevron-down");
-  $(this).children("i").toggleClass("fa-chevron-up");
+  $(this).children("i").toggleClass("fa-chevron-down fa-chevron-up");
   $(this).siblings(".sub-menu").toggle();
 });

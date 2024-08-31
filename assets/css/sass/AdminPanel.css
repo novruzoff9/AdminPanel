@@ -173,6 +173,24 @@ section h5 {
     margin: 0 auto;
     font-size: 26px;
   }
+  aside.mini-show ul li.has-menu .content {
+    align-items: center;
+  }
+  aside.mini-show ul li.has-menu .content p {
+    display: none;
+  }
+  aside.mini-show ul li.has-menu .content i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 26px;
+  }
+  aside.mini-show ul li.has-menu .content i:last-child {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
   header {
@@ -238,7 +256,7 @@ section h5 {
     top: 2px;
     right: 2px;
     border-radius: 50%;
-    background-color: #f06548;
+    background-color: #ff331f;
   }
   header #header-right #user-data {
     display: flex;
@@ -268,6 +286,7 @@ section h5 {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    z-index: 5;
   }
   header #notficiations-menu .header {
     display: flex;
@@ -317,7 +336,7 @@ section h5 {
   }
   header #notficiations-menu .content .alert i.message-alert {
     background-color: #fde8e4;
-    color: #f06548;
+    color: #ff331f;
   }
   header #notficiations-menu .content .alert .alert-content {
     width: calc(100% - 50px);
@@ -360,6 +379,7 @@ section h5 {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    z-index: 5;
   }
   header #profile-menu .header {
     display: flex;
@@ -433,5 +453,105 @@ section h5 {
   #content.show-more {
     width: calc(100vw - 80px);
     margin-left: 80px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  table {
+    background-color: #fff;
+    padding: 10px !important;
+    border-radius: 10px;
+  }
+  table td,
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  table td:first-child,
+  table th:first-child {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 70px;
+    text-align: center;
+  }
+  table td:last-child,
+  table th:last-child {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 70px;
+    text-align: center;
+  }
+  table thead tr {
+    border-bottom: 2px solid #ccc;
+  }
+  table thead tr td {
+    text-align: left;
+  }
+  table thead tr td input {
+    margin-left: 8px;
+    border: none;
+    outline: none;
+    width: calc(100% - 40px);
+  }
+  table thead tr th {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+  }
+  table tbody tr td {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+  }
+  table tbody tr td.actions {
+    position: relative;
+  }
+  table tbody tr td.actions .fa-chevron-down, table tbody tr td.actions .fa-chevron-up {
+    font-size: 12px;
+  }
+  table tbody tr td.actions .sub-menu {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    z-index: 5;
+    display: none;
+  }
+  table tbody tr td.actions .sub-menu li {
+    margin: 6px 0;
+    border-radius: 6px;
+  }
+  table tbody tr td.actions .sub-menu li a {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    padding: 2px 12px;
+  }
+  table tbody tr td.actions .sub-menu li a p {
+    margin: 0;
+    color: #222;
+  }
+  table tbody tr td.actions .sub-menu li a i.fa-trash {
+    color: #ff331f;
+  }
+  table tbody tr td.actions .sub-menu li a i.fa-pen {
+    color: #f06548;
+  }
+  table tbody tr td.actions .sub-menu li a i.fa-search {
+    color: #4056a1;
+  }
+  table tbody tr td.actions .sub-menu li:hover {
+    background-color: rgba(170, 170, 170, 0.2666666667);
+  }
+  table tbody tr td.actions:hover {
+    background-color: rgba(170, 170, 170, 0.2666666667);
+  }
+  table tbody tr:hover {
+    cursor: pointer;
+    background-color: rgba(170, 170, 170, 0.2666666667);
   }
 }/*# sourceMappingURL=AdminPanel.css.map */
