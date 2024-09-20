@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $medium-screen) {
   header {
     width: calc(100vw - 250px);
     margin-left: 250px;
@@ -16,9 +16,7 @@
       align-items: center;
       gap: 12px;
       i {
-        width: 40px;
-        height: 40px;
-        font-size: 26px;
+        @include icon-btn();
         cursor: pointer;
         @include flex-center();
         color: #030303;
@@ -33,9 +31,7 @@
       align-items: center;
       gap: 12px;
       #notficiationsbtn {
-        width: 40px;
-        height: 40px;
-        font-size: 26px;
+        @include icon-btn();
         cursor: pointer;
         @include flex-center();
         color: #030303;
@@ -101,7 +97,7 @@
         }
         p.new {
           background-color: #fff;
-          color: $primary-color;
+          color: $dark-blue;
           border-radius: 8px;
           padding: 4px 8px;
           margin: 0;

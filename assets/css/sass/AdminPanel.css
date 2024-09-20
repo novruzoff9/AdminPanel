@@ -35,17 +35,50 @@ section h5 {
   color: #62717c;
 }
 
+#adddata {
+  display: flex;
+  flex-direction: row;
+  background-color: #4056a1;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+}
+#adddata p,
+#adddata i {
+  color: white;
+  margin: 0;
+}
+
 @media only screen and (min-width: 600px) {
   aside {
     height: 100vh;
-    background-color: #4056a1;
+    background-color: #2d2f31;
     width: 250px;
     position: fixed;
     transition: width 0.4s ease;
   }
+  aside #aside_head {
+    padding-top: 10px;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+  aside #aside_head img {
+    width: 60px;
+  }
+  aside #aside_head p {
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 26px;
+  }
   aside ul {
     list-style: none;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
@@ -293,7 +326,7 @@ section h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #4056a1;
+    background-color: #2d2f31;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
@@ -359,7 +392,7 @@ section h5 {
   }
   header #notficiations-menu .content .seeall {
     margin: 10px auto;
-    background-color: #4056a1;
+    background-color: #2d2f31;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -386,7 +419,7 @@ section h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #4056a1;
+    background-color: #2d2f31;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
@@ -553,5 +586,38 @@ section h5 {
   table tbody tr:hover {
     cursor: pointer;
     background-color: rgba(170, 170, 170, 0.2666666667);
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .pagination a {
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 4px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .pagination a:hover, .pagination a.active {
+    background-color: #2d2f31;
+    color: #fff;
+  }
+  .pagination .prev,
+  .pagination .next {
+    font-weight: bold;
+  }
+  .pagination .disabled {
+    color: #aaa;
+    pointer-events: none;
+  }
+  .addrow {
+    margin-top: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: flex-end;
   }
 }/*# sourceMappingURL=AdminPanel.css.map */

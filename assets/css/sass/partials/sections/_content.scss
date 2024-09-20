@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $medium-screen) {
   #content {
     width: calc(100vw - 250px);
     margin-left: 250px;

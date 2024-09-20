@@ -1,4 +1,4 @@
-$primary-color: #4056a1;
+$primary-color: #2d2f31;
 
 $light-grey: #f2f4f8;
 $dark-blue: #4056a1;
@@ -13,6 +13,14 @@ $hover-white-background-transparent: #fff4;
 $section-padding: 20px 200px;
 $mobile-section-padding: 20px;
 
+$medium-screen: 600px;
+
+@mixin icon-btn(){
+  width: 40px;
+  font-size: 26px;
+  height: 40px;
+}
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -23,7 +31,7 @@ $mobile-section-padding: 20px;
   @media only screen and (min-width: 1500px){
     padding: $top 12vw;
   }
-  @media only screen and (min-width: 600px) and (max-width: 1499px){
+  @media only screen and (min-width: $medium-screen) and (max-width: 1499px){
     padding: $top 5vw;
   }
 }

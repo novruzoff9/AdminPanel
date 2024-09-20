@@ -1,8 +1,8 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: $light-grey !important;
 }
 
@@ -12,7 +12,7 @@ section {
   width: 100%;
   margin: 50px 0;
   @include section-padding(20px);
-  h2{
+  h2 {
     margin: 50px auto;
     color: #030303;
   }
@@ -20,8 +20,24 @@ section {
     margin: 50px auto 10px auto;
     color: #030303;
   }
-  h5{
+  h5 {
     margin: 0 auto 40px auto;
     color: #62717c;
+  }
+}
+
+#adddata {
+  display: flex;
+  flex-direction: row;
+  background-color: $dark-blue;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+  p,
+  i {
+    color: white;
+    margin: 0;
   }
 }

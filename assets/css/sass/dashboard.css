@@ -33,4 +33,20 @@ section h2.header-title {
 section h5 {
   margin: 0 auto 40px auto;
   color: #62717c;
+}
+
+#adddata {
+  display: flex;
+  flex-direction: row;
+  background-color: #4056a1;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  align-items: center;
+  gap: 12px;
+}
+#adddata p,
+#adddata i {
+  color: white;
+  margin: 0;
 }/*# sourceMappingURL=dashboard.css.map */
